@@ -1,0 +1,44 @@
+export PATH=${PATH}:/usr/local/mysql/bin
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/aommie/.oh-my-zsh"
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+
+ZSH_THEME="agnoster"
+
+
+CASE_SENSITIVE="true"
+
+zstyle ':omz:update' mode auto      # update automatically without asking
+
+zstyle ':omz:update' frequency 7
+
+ENABLE_CORRECTION="true"
+
+
+# Uncomment the following line if you want to change the command execution time
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="dd.mm.yyyy"
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+    git 
+    node
+    npm
+    yarn
+    vscode
+    zsh-autosuggestions
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+alias pls="sudo"
